@@ -1,1 +1,1 @@
-data/file.csv 
+read.csv("data/file.csv")
