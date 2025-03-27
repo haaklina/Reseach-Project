@@ -1,0 +1,13 @@
+By following the Smithsonian dataset card format. Include:
+
+Title: Descriptive title of the dataset:
+
+Description: What is the dataset, and why is it collected?
+
+Source: Data origin (NCBI).
+
+Format: Description of .fasta and .nexus files.
+
+Usage: Analysis goals (phylogenetic tree construction).
+
+Limitations: Biases or limitations (e.g., incomplete gene sequences).
