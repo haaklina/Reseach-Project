@@ -8,9 +8,9 @@ Data Description: Summary of input data:
 
 data/FASTA.txt Sequences.fasta (Gene sequences from NCBI)
 
-Tree_data.nexus (Nexus file for tree generation)
+data/nexus.text Tree_data.nexus (Nexus file for tree generation)
 
-Output (Analysis output (trees, plots)
+Output Analysis (trees, plots)
 
 Scripts (Analysis scripts)
 
