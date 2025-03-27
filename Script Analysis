@@ -1,9 +1,10 @@
 # Phylogenetic Tree Analysis Script
 
 # Load required packages
-library(ape)
-library(phangorn)
-library(seqinr)
+library("ape")
+library("phangorn")
+library("MrBayes/Phytools")
+library("geiger")
 
 # Set working directory (modify as needed)
 setwd("../Phylogenetic-Tree-Project")
@@ -15,7 +16,7 @@ nexus_file <- "data/tree_data.nexus"
 # Read gene sequences
 sequences <- read.fasta(fasta_file)
 
-# Convert sequences to alignment
+# Convert sequences to alignment (By using AliView)
 alignment <- ape::read.dna(fasta_file, format = "fasta")
 
 # Generate distance matrix
