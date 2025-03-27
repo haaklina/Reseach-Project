@@ -1,12 +1,21 @@
 By following the Smithsonian dataset card format. Include:
 
-Title: Descriptive title of the dataset:
+Dataset Card: Phylogenetic Tree Project
 
-Description: What is the dataset, and why is it collected?
+Title:
+Phylogenetic Tree of Gene Sequences from NCBI
 
-Source: Data origin (NCBI).
+Description:
+This dataset contains gene sequence data obtained from the National Center for Biotechnology Information (NCBI) in FASTA format and a corresponding Nexus file used for generating phylogenetic trees. The purpose of this project is to construct and analyze phylogenetic relationships among Ascidian species using sequence data.
 
-Format: Description of .fasta and .nexus files.
+Source:
+Data retrieved from: NCBI (National Center for Biotechnology Information)
+
+File Formats: .fasta for gene sequences, .nexus for phylogenetic tree generation
+
+sequences.fasta: Contains around 500bp gene sequences different tunicate species (demo species collected: source: https://seanet.stanford.edu/Urochordata) in FASTA format.
+
+tree_data.nexus: Contains phylogenetic tree generation information.
 
 Usage: Analysis goals (phylogenetic tree construction).
 
