@@ -6,7 +6,7 @@ Phylogenetic-Tree-Project
 
 Data Description: Summary of input data:
 
-Sequences.fasta (Gene sequences from NCBI)
+data/FASTA.txt Sequences.fasta (Gene sequences from NCBI)
 
 Tree_data.nexus (Nexus file for tree generation)
 
