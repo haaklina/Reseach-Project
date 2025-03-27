@@ -26,7 +26,7 @@ Methodology: Tools and methods used:
 
 Clone the repository:
 git clone https://github.com/akther/Phylogenetic-Tree-Project.git cd Phylogenetic-Tree-Project
-Install necessary R packages (if not already installed):
+Install necessary R packages:
 install.packages("ape")
 install.packages("phangorn") install.packages("seqinr") Usage Running the Analysis
 Load the data and scripts:
