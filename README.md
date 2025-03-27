@@ -25,7 +25,7 @@ Getting started prerequisites • R or RStudio (for analysis scripts) • Requir
 Methodology: Tools and methods used:
 
 Clone the repository:
-git clone https://github.com/akther/Phylogenetic-Tree-Project.git cd Phylogenetic-Tree-Project
+git clone https://https://github.com/haaklina/Reseach-Project.git
 Install necessary R packages:
 install.packages("MrBayes")
 install.packages("AliView") install.packages("Beast") Usage Running the Analysis
