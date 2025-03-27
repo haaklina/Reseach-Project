@@ -27,13 +27,13 @@ Methodology: Tools and methods used:
 Clone the repository:
 git clone https://github.com/akther/Phylogenetic-Tree-Project.git cd Phylogenetic-Tree-Project
 Install necessary R packages:
-install.packages("ape")
-install.packages("phangorn") install.packages("seqinr") Usage Running the Analysis
+install.packages("MrBayes")
+install.packages("AliView") install.packages("Beast") Usage Running the Analysis
 Load the data and scripts:
 Load packages
-library(ape)
-library(phangorn)
-library(seqinr)
+library(MrBayes)
+library(AliView)
+library(Beast)
 Read data
 
 Instructions: How to run the analysis:
