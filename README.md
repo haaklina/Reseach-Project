@@ -37,7 +37,13 @@ library(AliView)
 library(Beast)
 Read data
 
-Instructions: How to run the analysis:
+Instructions: How to run the analysis: Software Needed 
+●	AliView
+●	Mr.Bayes
+●	Beast
+●	FigTree
+*This protocol is optimized to be run on a PC, additional steps and changes may be needed to run on a MAC
+[image](https://github.com/user-attachments/assets/0a33475b-47bb-4b5f-b09e-270103618416)
 
 fasta_data <- read.fasta("data/sequences.fasta") nexus_data <- read.nexus("data/tree_data.nexus")
 Perform phylogenetic tree construction and visualization. Output • The /output directory will contain generated phylogenetic trees, sequence alignments, and plots.
