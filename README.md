@@ -41,7 +41,7 @@ Instructions: How to run the analysis:
 fasta_data <- read.fasta("data/sequences.fasta") nexus_data <- read.nexus("data/tree_data.nexus")
 Perform phylogenetic tree construction and visualization. Output • The /output directory will contain generated phylogenetic trees, sequence alignments, and plots.
 
-Contact For questions or collaboration opportunities, please contact haaklina or Hasna Akther.
+Contact For questions or collaboration opportunities, please contact me haaklina or hakther@sfsu.edu.
 
 
 
