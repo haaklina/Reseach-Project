@@ -25,7 +25,7 @@ Getting started prerequisites • R or RStudio (for analysis scripts) • Requir
 Methodology: Tools and methods used:
 
 Clone the repository:
-git clone https://github.com/yourusername/Phylogenetic-Tree-Project.git cd Phylogenetic-Tree-Project
+git clone https://github.com/akther/Phylogenetic-Tree-Project.git cd Phylogenetic-Tree-Project
 Install necessary R packages (if not already installed):
 install.packages("ape")
 install.packages("phangorn") install.packages("seqinr") Usage Running the Analysis
