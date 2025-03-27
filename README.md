@@ -5,9 +5,7 @@ Ascidians play an important role in the invertebrate ecology of California aquat
 Phylogenetic-Tree-Project
 
 Data Description: Summary of input data:
-
 data/FASTA.txt Sequences.fasta (Gene sequences from NCBI)
-
 data/nexus.text Tree_data.nexus (Nexus file for tree generation)
 
 Output Analysis (trees, plots)
