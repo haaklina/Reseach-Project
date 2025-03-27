@@ -1,0 +1,52 @@
+# Phylogenetic Tree Analysis Script
+
+# Load required packages
+library(ape)
+library(phangorn)
+library(seqinr)
+
+# Set working directory (modify as needed)
+setwd("../Phylogenetic-Tree-Project")
+
+# Load data
+fasta_file <- "data/sequences.fasta"
+nexus_file <- "data/tree_data.nexus"
+
+# Read gene sequences
+sequences <- read.fasta(fasta_file)
+
+# Convert sequences to alignment
+alignment <- ape::read.dna(fasta_file, format = "fasta")
+
+# Generate distance matrix
+dist_matrix <- dist.dna(alignment, model = "K80")
+
+# Build neighbor-joining tree
+nj_tree <- nj(dist_matrix)
+
+# Plot neighbor-joining tree
+plot(nj_tree, main = "Neighbor-Joining Phylogenetic Tree")
+
+# Save tree to file
+write.tree(nj_tree, file = "output/nj_tree.nwk")
+
+# Parsimony analysis
+parsimony_tree <- optim.parsimony(nj_tree, alignment)
+
+# Plot parsimony tree
+plot(parsimony_tree, main = "Parsimony Phylogenetic Tree")
+
+# Save parsimony tree
+write.tree(parsimony_tree, file = "output/parsimony_tree.nwk")
+
+# Bootstrap analysis
+bootstrap_tree <- boot.phylo(nj_tree, alignment, function(x) nj(dist.dna(x)), B = 100)
+
+# Plot bootstrap values
+plot(nj_tree, main = "Bootstrap Analysis")
+nodelabels(bootstrap_tree, cex = 0.7)
+
+# Save bootstrap tree
+write.tree(nj_tree, file = "output/bootstrap_tree.nwk")
+
+# End of Script
