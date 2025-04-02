@@ -1,4 +1,5 @@
 This folder will contain files such as phylogenetic trees, alignment results, or analysis plots.
+Alighnment Results Nexus format.txt
 BEGIN DATA;
 DIMENSIONS  NTAX=20 NCHAR=1397;
 FORMAT DATATYPE=DNA GAP=- MISSING=?;
