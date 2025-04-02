@@ -15,7 +15,13 @@ Data retrieved from: NCBI (National Center for Biotechnology Information)
 ## Data Instances: 
 File Formats: .fasta for gene sequences, .nexus for phylogenetic tree generation
 sequences.fasta: Contains around 600bais pairs (bp) gene sequences different tunicate species (demo species collected: source: https://seanet.stanford.edu/Urochordata) in FASTA format.
-tree_data.nexus: Contains phylogenetic tree generation information.
+
+## Documentation for Source Datasets
+### Tunicate datasets
+
+| Species Name  | Genome Accession  | Tunicate Read Accessions   | NCBI Read Accessions  |
+|---|---|---|---|
+
 
 ## Usage: 
 Analysis goals (phylogenetic tree construction).
