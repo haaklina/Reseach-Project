@@ -23,7 +23,11 @@ sequences.fasta: Contains around 600bais pairs (bp) gene sequences different tun
 
 | Species Name  | Genetic Marker  | Tunicate Population   | Sources  |
 |---|---|---|---|
-| *Pyura chilensis* | 614 bp, DNA, CO1* gene | Solitary | Gao et al 2023 |
+| *Pyura chilensis* | 614 bp, DNA, CO1* gene | Solitary | Gao et al. 2023 |
+| *Styela plicata* | 624 bp, DNA, COX1* gene | Solitary | Gao et al. 2023; Ramesh et al. 2021 |
+| *Synoicum kincaidi* | 786 bp, DNA, COX1 gene | Colonial | https://seanet.stanford.edu/Urochordata |
+
+
 
 ## Preprocessing and Data Formatting
 I downloaded all the genomes as fasta files and renamed them to include the genus and species in the file names including population's name.
