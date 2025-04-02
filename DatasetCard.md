@@ -19,8 +19,10 @@ sequences.fasta: Contains around 600bais pairs (bp) gene sequences different tun
 ## Documentation for Source Datasets
 ### Tunicate datasets
 
-| Species Name  | Genome Accession  | Tunicate Read Accessions   | NCBI Read Accessions  |
+| Species Name  | Genetic Marker  | Tunicate Population   | Sources  |
 |---|---|---|---|
+| *Pyura chilensis* | 614 bp, DNA, CO1* gene | Solitary | Gao et al 2023 |
+
 
 
 ## Usage: 
