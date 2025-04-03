@@ -1,8 +1,20 @@
+## Dataset title: 
+Phylogenetic Tree Project of Ascidians species.
+
+## Dataset citation and DOI:
+Gao, P., Khong, H. Y., Mao, W., Chen, X., Bao, L., Wen, X., & Xu, Y. (2023). Tunicates as sources of high-quality nutrients and bioactive compounds for food/feed and pharmaceutical applications: A review. Foods, 12(19), 3684.
+
+Ramesh, C., Tulasi, B. R., Raju, M., Thakur, N., & Dufossé, L. (2021). Marine natural products from tunicates and their associated microbes. Marine drugs, 19(6), 308.
+
+Wilson, E. R., Murphy, K. J., & Wyeth, R. C. (2022). Ecological review of the Ciona species complex. The Biological Bulletin, 242(2), 153-171.
+
+Ciona wikipedia.
+
+https://seanet.stanford.edu/Urochordata
+
+
 ## Dataset Summary:
-Phylogenetic Tree Project
-Title:
 Phylogenetic Tree of Gene Sequences from National Center for Biotechnology Information (NCBI)
-Description:
 This dataset contains gene sequence data (nucleotide) obtained from the (NCBI) (https://www.ncbi.nlm.nih.gov/nuccore/?term=Ascidian) in FASTA format and a corresponding Nexus file used for generating phylogenetic trees. The purpose of this project is to construct and analyze phylogenetic relationships among Ascidian species using sequence data.
 
 ## Data format:
