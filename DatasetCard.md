@@ -51,7 +51,7 @@ CO1* cytochrome oxidase subunit 1.
 ## Preprocessing and Data Formatting
 I downloaded all the genomes as fasta files and renamed them to include the genus and species in the file names including population's name.
 
-For the read files, I downloaded them in fastq format, and if a species had multiple read files from the same sequencing platform, I concatenated them into a single file for all downstream processing. I used ALiView for alignment and trimming all the short read files to remove adapter sequences, though I did trim them for quality as well. 
+For the read files, I downloaded them in fasta format, and if a species had multiple read files from the same sequencing platform, I concatenated them into a single file for all downstream processing. I used ALiView for alignment and trimming all the short read files to remove adapter sequences, though I did trim them for quality as well. 
 
 Collect them into a final fasta file and after alignment I got organized data in Nexus format for analysis in MrBayes or R program for generating tree.
 
