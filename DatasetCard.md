@@ -43,8 +43,10 @@ sequences.fasta: Contains around 600bais pairs (bp) gene sequences different tun
 | *Phallusia nigra* | 606 bp DNA, COX1 gene | Solitary | Ramesh et al. 2021 |
 | *Polycarpa pomaria* | 617 bp DNA, CO1 gene | Solitary | Gao et al. 2023 |
 | *Halocynthia aurantium*| 658 bp DNA, COX1 gene | Solitary | Gao et al. 2023; Ramesh et al. 2021 |
-COX1* cytochorme c oxidase subunit I gene.
-CO1* cytochrome oxidase subunit 1.
+
+
+# COX1* cytochorme c oxidase subunit I gene.
+# CO1* cytochrome oxidase subunit 1.
 
 ## Preprocessing and Data Formatting
 I downloaded all the genomes as fasta files and renamed them to include the genus and species in the file names including population's name.
