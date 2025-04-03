@@ -23,11 +23,28 @@ sequences.fasta: Contains around 600bais pairs (bp) gene sequences different tun
 
 | Species Name  | Genetic Marker  | Tunicate Population   | Sources  |
 |---|---|---|---|
-| *Pyura chilensis* | 614 bp, DNA, CO1* gene | Solitary | Gao et al. 2023 |
-| *Styela plicata* | 624 bp, DNA, COX1* gene | Solitary | Gao et al. 2023; Ramesh et al. 2021 |
-| *Synoicum kincaidi* | 786 bp, DNA, COX1 gene | Colonial | https://seanet.stanford.edu/Urochordata |
-
-
+| *Pyura chilensis* | 614 bp DNA, CO1* gene | Solitary | Gao et al. 2023 |
+| *Styela plicata* | 624 bp DNA, COX1* gene | Solitary | Gao et al. 2023; Ramesh et al. 2021 |
+| *Synoicum kincaidi* | 658 bp DNA, COX1 gene | Colonial | https://seanet.stanford.edu/Urochordata |
+| *Ciona intestinalis* | 786 bp DNA, COX1 gene | Solitary | Wilson et al. 2022; Ramesh et al. 2021. |
+| *Boltenia villosa* | 658 bp DNA, CO1 gene | Solitary | https://seanet.stanford.edu/Urochordata |
+| *Distaplia occidentalis* | 658 bp DNA, COX1 gene | Colonial | https://seanet.stanford.edu/Urochordata |
+| *Ascidia ceratodes* | 845 bp DNA, COX1 gene | Solitary | Solitary
+| *Diplosoma listerianum* | 531 bp DNA, CO1 gene | Colonial | https://seanet.stanford.edu/Urochordata |
+| *Cnemidocarpa finmarkiensis* | 658 bp DNA, COI gene | Solitary | https://seanet.stanford.edu/Urochordata |
+| *Ciona robusta* | 626 bp DNA, COX1 gene | Solitary | Wilson et al. 2022 |
+| *Ciona edwardsi* | 737 bp DNA, CO1 gene | Solitary | Ciona wiki |
+| *Ciona roulei* | 744 bp DNA, CO1 gene | Solitary | Ciona wiki |
+| *Ciona sp.* | 583 bp DNA, p. cox3 gene | Solitary | Ciona wiki |
+| *Styela montereyensis* | 580 bp DNA, CO1 gene | Solitary | Gao et al. 2023 |
+| *Pyura haustor* | 658 bp DNA, CO1 gene | Solitary | Gao et al. 2023 |
+| *Halocynthia igaboja* | 708 bp DNA, COX1 gene | Solitary | Ciona wiki |
+| *Sigillina signifera* | 759 bp DNA, COX1 gene | Solitary | Ramesh et al. 2021 |
+| *Phallusia nigra* | 606 bp DNA, COX1 gene | Solitary | Ramesh et al. 2021 |
+| *Polycarpa pomaria* | 617 bp DNA, CO1 gene | Solitary | Gao et al. 2023 |
+| *Halocynthia aurantium*| 658 bp DNA, COX1 gene | Solitary | Gao et al. 2023; Ramesh et al. 2021 |
+COX1* cytochorme c oxidase subunit I gene.
+CO1* cytochrome oxidase subunit 1.
 
 ## Preprocessing and Data Formatting
 I downloaded all the genomes as fasta files and renamed them to include the genus and species in the file names including population's name.
