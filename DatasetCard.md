@@ -2,7 +2,7 @@
 Phylogenetic Tree Project of Ascidians species.
 
 ## Dataset citation and DOI:
-Gao, P., Khong, H. Y., Mao, W., Chen, X., Bao, L., Wen, X., & Xu, Y. (2023). Tunicates as sources of high-quality nutrients and bioactive compounds for food/feed and pharmaceutical applications: *A review.* Foods, *12*(19), 3684.
+Gao, P., Khong, H. Y., Mao, W., Chen, X., Bao, L., Wen, X., & Xu, Y. (2023). Tunicates as sources of high-quality nutrients and bioactive compounds for food/feed and pharmaceutical applications: *A review. Foods*, *12*(19), 3684.
 
 Ramesh, C., Tulasi, B. R., Raju, M., Thakur, N., & Dufossé, L. (2021). Marine natural products from tunicates and their associated microbes. *Marine drugs*, *19*(6), 308.
 
