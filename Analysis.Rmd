@@ -1,0 +1,76 @@
+---
+title: "Week 9 Project Script Analysis"
+author: "Hasna Akther"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+```
+
+# Title: Morphological and genetic characterization of outer coast ascidians in central California (CA).
+**Background and Problem Statement:**
+Ascidians play an important role in the invertebrate ecology of California aquatic ecosystems. In addition, they have a great contribution in medical science. Bays are full of nonindigenous and some native ascidians that are under investigation to learn their existence. The central coast of California remains understudied since it has been dominated by native species, although the problematic invasive *didemnid* is threatening to escape from San Francisco Bay to the outer coast at this time (Nydam etl al. 2021). It is significant to identify in this region which species are present on the outer coast, and to update taxonomic analyses with additional reproductive characters, habitat and distributional characters, and molecular information. The ascidians species have a similar colony and zooid outlook, which is why it can be challenging to distinguish them by using identification keys which nearly provided an ambiguous result.  The present proposal describes the research that I wish to undertake in order to contribute to finding a solution to these problem statements: to examines the morphological and reproductive patterns of ascidian species for identifying distinguishing characteristics. While the distribution of outer bay species plays a significant role in shaping these characteristics, influencing species composition and adaptation, as well as an extensive analysis will determine which ascidian species inhabit the outer coast and establish the morphological traits used for their identification, comparing findings with existing reports.
+
+**Research Questions and Experimental Analysis:**
+The main objective is to reassess tunicate species diversity in central California by combining varied kinds of data, including molecular, morphological, ecological, and historic information. Key research questions include: What are the distinguishing morphological and reproductive traits of outer coast ascidians? How does species distribution influence these characteristics? In order to address these research questions, I will analyze features of zooids with morphological traits that are used in ascidian IDs, such as characters of the branchial basket, arrangement of the zooids in tunics, arrangement of the gonad, stomach, intestinal loop, and features of the brooding and employ DNA barcoding for phylogenetic analysis. The Bayesian inference and Maximum likelihood will be used to estimate the phylogenetic relationships, conducted in MEGA and MrBayes v3.232. Principal Component Analysis (PCA) will compare morphological and molecular data using R (R version 4.4.2). Beyond this, different microscopic analysis images will be processed by using Anaconda Python and ImageJ software comparing with websites pictures and literature review. This in-depth experimental analysis will contribute to update ascidian taxonomy and understanding species distribution patterns along the outer coast. 
+
+**Citation:** Nydam, M. L., Lemmon, A. R., Cherry, J. R., Kortyna, M. L., Clancy, D. L., Hernandez, C., & Cohen, C. S. (2021). Phylogenomic and morphological relationships among the botryllid ascidians (Subphylum Tunicata, Class Ascidiacea, Family Styelidae). *Scientific Reports, 11*(1), 8351.
+
+
+# Phylogenetic Tree Analysis Script
+
+# Load required packages
+library("ape")
+library("phangorn")
+library("MrBayes/Phytools")
+library("geiger")
+
+# Set working directory (modify as needed)
+setwd("../Phylogenetic-Tree-Project")
+
+# Load data
+fasta_file <- "data/sequences.fasta"
+nexus_file <- "data/tree_data.nexus"
+
+# Read gene sequences
+sequences <- read.fasta(fasta_file)
+
+# Convert sequences to alignment (By using AliView)
+alignment <- ape::read.dna(fasta_file, format = "fasta")
+
+# Generate distance matrix
+dist_matrix <- dist.dna(alignment, model = "K80")
+
+# Build neighbor-joining tree
+nj_tree <- nj(dist_matrix)
+
+# Plot neighbor-joining tree
+plot(nj_tree, main = "Neighbor-Joining Phylogenetic Tree")
+
+# Save tree to file
+write.tree(nj_tree, file = "output/nj_tree.nwk")
+
+# Parsimony analysis
+parsimony_tree <- optim.parsimony(nj_tree, alignment)
+
+# Plot parsimony tree
+plot(parsimony_tree, main = "Parsimony Phylogenetic Tree")
+
+# Save parsimony tree
+write.tree(parsimony_tree, file = "output/parsimony_tree.nwk")
+
+# Bootstrap analysis
+bootstrap_tree <- boot.phylo(nj_tree, alignment, function(x) nj(dist.dna(x)), B = 100)
+
+# Plot bootstrap values
+plot(nj_tree, main = "Bootstrap Analysis")
+nodelabels(bootstrap_tree, cex = 0.7)
+
+# Save bootstrap tree
+write.tree(nj_tree, file = "output/bootstrap_tree.nwk")
+
+# End of Script
